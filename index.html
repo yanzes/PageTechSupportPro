@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSupport Pro</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="flex flex-col min-h-screen">
+        <!-- Header -->
+        <header class="px-4 lg:px-6 h-14 flex items-center">
+            <a class="flex items-center justify-center" href="#">
+                <svg class="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                <span class="ml-8 text-5xl font-bold">TechSupport Pro</span>
+            </a>
+            <nav class="ml-auto flex gap-4 sm:gap-6">
+                <a class="text-2xl font-medium hover:underline underline-offset-4" href="#servicios">Servicios</a>
+                <a class="text-2xl font-medium hover:underline underline-offset-4" href="#contacto">Contacto</a>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-1">
+            <!-- Hero Section -->
+            <section class="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-black text-white">
+                <div class="container px-4 md:px-6 mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+                        <div class="flex flex-col items-center lg:items-start space-y-4">
+                            <div class="space-y-2">
+                                <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+                                    Soluciones Tecnológicas Integrales
+                                </h1>
+                                <p class="max-w-[700px] text-gray-300 md:text-xl">
+                                    Soporte técnico, venta de equipos y servicios de software para todas tus necesidades tecnológicas.
+                                </p>
+                            </div>
+                            <div class="space-x-4">
+                                <a href="#contacto" class="btn btn-primary">Contactar</a>                          
+                                <a href="#servicios" class="btn btn-outline">Nuestros Servicios</a>
+                            </div>
+                        </div>
+                        <div class="flex justify-center lg:justify-end">
+                            <img src="https://media.istockphoto.com/id/1366023601/es/foto/foto-recortada-de-una-atractiva-joven-agente-de-centro-de-llamadas-que-trabaja-en-su-oficina.jpg?s=612x612&w=0&k=20&c=v0TOm6n_HVEpt-v01yEJ29tWrvAEsK_FU5-tNEqm8W4=" alt="Equipo de soporte técnico trabajando" 
+                                 class="rounded-lg object-cover" width="800" height="800">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="servicios" class="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+                <div class="container px-4 md:px-6 mx-auto">
+                    <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">Nuestros Servicios</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="services-grid">
+                        <!-- Services cards will be inserted here by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contacto" class="w-full py-12 md:py-24 lg:py-32">
+                <div class="container px-4 md:px-6 mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+                        <div>
+                            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl mb-4">Contáctanos</h2>
+                            <p class="text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mb-4">
+                                Estamos aquí para ayudarte con todas tus necesidades tecnológicas. No dudes en contactarnos.
+                            </p>
+                            <img src="https://lecdecor.com/wp-content/uploads/2021/07/contacto.jpg" alt="Equipo de soporte atendiendo llamadas" 
+                                 class="rounded-lg object-cover" width="800" height="600">
+                        </div>
+                        <div class="max-w-lg mx-auto">
+                            <form class="space-y-4" id="contact-form">
+                                <input class="input" type="text" placeholder="Nombre" required>
+                                <input class="input" type="email" placeholder="Email" required>
+                                <input class="input" type="text" placeholder="Asunto" required>
+                                <textarea class="input" placeholder="Mensaje" required></textarea>
+                                <button type="submit" class="btn btn-primary w-full">Enviar Mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+            <p class="text-xs text-gray-500">© 2024 TechSupport Pro. Todos los derechos reservados.</p>
+            <nav class="sm:ml-auto flex gap-4 sm:gap-6">
+                <a class="text-xs hover:underline underline-offset-4" href="#">Términos de Servicio</a>
+                <a class="text-xs hover:underline underline-offset-4" href="#">Política de Privacidad</a>
+            </nav>
+        </footer>
+    </div>
+   <script src="/script.js"></script>
+</body>
+</html>
